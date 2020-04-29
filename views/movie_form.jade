@@ -1,0 +1,36 @@
+extends layout
+
+block content
+  .container
+    .form_container
+      form.form-horizontal(role='form', method='POST', target='_self')
+        .row
+          .col-md-3
+          .col-md-6
+            h2 Add new movie
+            hr
+        .row
+          .col-md-3.field-label-responsive
+            label(for='name') Title
+          .col-md-6
+            .form-group
+              .input-group.mb-2.mr-sm-2.mb-sm-0
+                input#title.form-control(type='text', name='title', required='', autofocus='')
+        .row
+          .col-md-3.field-label-responsive
+            label(for='name') Plot
+          .col-md-6
+            .form-group
+              .input-group.mb-2.mr-sm-2.mb-sm-0
+                input#plot.form-control(type='text', name='plot', required='', autofocus='')
+        .row
+          .col-md-3.field-label-responsive
+            label(for='name') Poster
+          .col-md-6
+            .form-group
+              .input-group.mb-2.mr-sm-2.mb-sm-0
+                input#poster.form-control(type='text', name='poster', required='', autofocus='')
+        .row
+          .col-md-3
+          .col-md-6
+            button.btn.btn-block.btn-success(type='submit') Add
